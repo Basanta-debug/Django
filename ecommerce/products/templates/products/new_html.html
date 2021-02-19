@@ -1,0 +1,18 @@
+
+
+{% extends 'layout.html' %}
+
+{% block title %}
+    <title>Title</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <h1>saasdas</h1>
+    <ul>
+{% for item in items %}
+    <li>{{item.name}} {{ item.price }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+</body>
